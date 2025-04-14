@@ -268,4 +268,115 @@ console.log(score ?? "no score "); // will return 0 because even though it is fa
 
 
 let course1;
-console.log(course1 ?? "Please select a course");
+console.log(course1 ?? "Please select a course"); // because it is undefined
+
+//lesson 21 JS control flow 
+
+//lesson 22 IF ELSE statment
+if (10>1) {
+  console.log("The condition is true");
+}
+
+/**
+ * Any value you put inside if ( ... ) gets converted to true/false using truthy/falsy rules.
+
+js
+Copy
+Edit
+if ("Bbek") {
+  console.log("This runs, because strings are truthy");
+}
+
+if (0) {
+  console.log("This won’t run, 0 is falsy");
+}
+
+
+✅ What Can You Put in an if Condition?
+You can put:
+
+🔹 1. Comparison Expressions
+js
+Copy
+Edit
+if (age > 18)
+if (score === 100)
+if (temperature !== 0)
+These return true or false.
+
+🔹 2. Variables (Boolean or Any Value)
+js
+Copy
+Edit
+let isLoggedIn = true;
+if (isLoggedIn) {
+  console.log("Show dashboard");
+}
+
+let username = "";  // empty string is falsy
+if (username) {
+  console.log("Welcome " + username);  // won't run
+}
+🔹 3. Function Calls That Return Boolean
+js
+Copy
+Edit
+function isWeekend(day) {
+  return day === "Saturday" || day === "Sunday";
+}
+
+if (isWeekend("Sunday")) {
+  console.log("Chill time!");
+}
+🔹 4. Logical Conditions
+js
+Copy
+Edit
+if (age >= 18 && hasID) {
+  console.log("You can enter");
+}
+
+if (loggedIn || isAdmin) {
+  console.log("Access granted");
+}
+🔹 5. Truthy / Falsy Directly
+js
+Copy
+Edit
+if (0)         // false
+if ("hello")   // true
+if (null)      // false
+if ([])        // true
+ */
+
+
+let num12 = 10 + 2;
+if(num >2 && num < 20) {
+  console.log("True");
+  
+} else {
+  console.log("False");
+  
+}
+
+// 2
+let user = "employee";
+
+if ( user === 'guest' ) {
+  console.log("Login denied");
+} else if (user === 'employee') { n  
+  console.log("Successfully Logged in");
+};
+
+//3 task enter ypur name and check the conditons
+let myName2 = "Bibek";
+if( myName2.length > 5 ) {
+   alert("More than 5");
+} else if (myName2 .length === 5 ) {
+  alert('Exactly 5 letters');
+} else {
+  alert("Less than 5 letters");
+}
+
+
+// Lesson 23 Using the switch statment
